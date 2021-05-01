@@ -1,2 +1,2 @@
-# Computer Graphics in C/C++
-Computer Graphics programs in C/C++ like DDA, Bresenham Line Algorithm, Mid Point Circle Algorithm, Cohen Sutherland Line Clipping etc. 
+# Computer Graphics 
+Computer Graphics programs written in C/C++/Java including DDA, Bresenham Line Algorithm, Bresenham Circle Algorithm, Mid Point Circle Algorithm, Cohen Sutherland Line Clipping etc. 
