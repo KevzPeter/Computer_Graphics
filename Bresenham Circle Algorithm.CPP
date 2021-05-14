@@ -1,6 +1,14 @@
 #include <graphics.h>
+#include <stdlib.h>
+#include <string.h>
 #include <stdio.h>
 #include <conio.h>
+#include<math.h>
+#include<dos.h>
+#include<string.h>
+#include<iostream>
+#include<ctime>
+
 void EightWayPlot(int xc,int yc,int x,int y){
 putpixel(x+xc,y+yc,RED);
 putpixel(x+xc,-y+yc,YELLOW);
@@ -27,9 +35,9 @@ x=x+1;
 EightWayPlot(xc,yc,x,y);
 }
 }
-void main(){
-int gdriver=DETECT,gmode,error,xc,yc,r;
-initgraph(&gdriver,&gmode,"C:\\TURBOC3\\BGI");
+int main(void){
+int gdriver = DETECT, gmode, errorcode,xc,yc,r;
+initgraph(&gdriver,&gmode,"d:\\tc\\bgi");
 printf("enter coordinates of center:\n");
 scanf("%d %d",&xc,&yc);
 printf("enter radius of circle:\n");
@@ -37,4 +45,5 @@ scanf("%d",&r);
 Bresenham(xc,yc,r);
 getch();
 closegraph();
+return 0;
 }
