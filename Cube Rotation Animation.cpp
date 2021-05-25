@@ -54,15 +54,19 @@ void rotate (void)
 
     for (i=0; i<4; i++)
     {
- setcolor(7);
- line (face1[i][0], face1[i][1], face1[i+1][0], face1[i+1][1]);
- setcolor(8);
+        int random_color=(rand() %15);
+ setcolor(random_color);
+ line ((face1[i][0]), (face1[i][1]), (face1[i+1][0]), (face1[i+1][1]));
+ line ((face1[i][0])+1, (face1[i][1])+1, (face1[i+1][0])+1, (face1[i+1][1]+1));
+ setcolor(random_color);
  line (face2[i][0], face2[i][1], face2[i+1][0], face2[i+1][1]);
- setcolor(9);
+  line ((face2[i][0])+1, (face2[i][1])+1, (face2[i+1][0])+1, (face2[i+1][1]+1));
+ setcolor(random_color);
  line (face1[i][0], face1[i][1], face2[i][0], face2[i][1]);
+  line ((face1[i][0])+1, (face1[i][1])+1, (face1[i+1][0])+1, (face1[i+1][1]+1));
     }
 
-    delay (50);
+    delay (25);
 }
 
 int main(void)
